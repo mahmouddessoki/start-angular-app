@@ -1,0 +1,23 @@
+ i {
+  display: inline-flex;
+  width: 45px;
+  height: 45px;
+  border:2px solid white !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+}
+a {
+  color: white !important;
+  text-decoration: none;
+}
+a:hover {
+  color: #1ABC9C !important;
+}
+a:hover i {
+  border-color: #1ABC9C !important;
+}
+.rights {
+  background-color: #11181F !important;
+}

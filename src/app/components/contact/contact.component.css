@@ -1,0 +1,18 @@
+label span {
+  color: #1ABCA9 !important;
+  display: inline-block;
+  transform: translateY(18px) !important;
+
+}
+label {
+  overflow: hidden !important;
+}
+
+.active-label span {
+  transform: translateY(0) !important;
+
+}
+
+button {
+  background-color: #1ABCA9 !important;
+}

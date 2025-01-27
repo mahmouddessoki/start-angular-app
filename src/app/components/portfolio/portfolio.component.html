@@ -1,0 +1,37 @@
+<section id="portfolio" class="d-flex py-5 flex-column align-items-center justify-content-center">
+
+  <div class="header mt-5">
+    <h2 class="fw-bold text-uppercase">portfolio component</h2>
+    <div class="star-icon my-4">
+      <i class="fa-solid fa-star fa-xl text-white"></i>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row gy-5">
+     @for (item of port_imgs; track $index) {
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-card position-relative" (click)="openModal($index)">
+          <img [src]="item.img_url" class="w-100 rounded-3" alt="">
+          <div
+            class="card-overlay d-flex justify-content-center align-items-center rounded-3 position-absolute top-0 start-0 bottom-0 end-0">
+            <i class="fa-solid fa-plus fa-7x text-white"></i>
+
+          </div>
+        </div>
+      </div>
+     }
+    </div>
+  </div>
+
+
+  <div [class]="{
+    'd-none':!show_modal,
+    'd-flex': show_modal
+  }" class="port-modal position-fixed top-0 start-0 end-0 bottom-0 justify-content-center align-items-center" (click)="closeModal($event)">
+    <div class="modal-image col-lg-5 col-md-7 col-10">
+      <img [src]="modal_img" class="w-100 rounded-3" alt="">
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,67 @@
+<section id="contact" class="d-flex py-5 flex-column align-items-center justify-content-center">
+
+  <div class="header mt-5">
+    <h2 class="fw-bold text-uppercase">contact component</h2>
+    <div class="star-icon my-4">
+      <i class="fa-solid fa-star fa-xl text-white"></i>
+    </div>
+  </div>
+
+
+
+  <div class="container py-5">
+    <div class="contact-form w-75 mx-auto">
+      <form action="#">
+        <div class="username-input mb-3">
+          <label [class]="{
+            'active-label' : nameValue?.length
+
+          }" for="username" class="w-100 px-2">
+            <span>userName</span>
+          </label>
+
+          <input [(ngModel)]="nameValue" type="text" placeholder="userName"
+            class="form-control py-3 shadow-none border-bottom border-0 px-2" id="username" name="username" required>
+        </div>
+        <div class="userage-input mb-3">
+          <label [class]="{
+            'active-label' : ageValue
+
+          }" for="userage" class="w-100 px-2">
+            <span>userAge</span>
+          </label>
+
+          <input [(ngModel)]="ageValue" type="text" placeholder="userAge"
+            class="form-control py-3 shadow-none border-bottom border-0 px-2" id="userage" name="userage" required>
+        </div>
+        <div class="useremail-input mb-3">
+          <label [class]="{
+            'active-label' : emailValue
+
+          }" for="useremail" class="w-100 px-2">
+            <span>userEmail</span>
+          </label>
+
+          <input [(ngModel)]="emailValue" type="text" placeholder="userEmail"
+            class="form-control py-3 shadow-none border-bottom border-0 px-2" id="useremail" name="useremail" required>
+        </div>
+        <div class="userpw-input mb-4">
+          <label [class]="{
+            'active-label' : passwordValue
+
+          }" for="userpassword" class="w-100 px-2">
+            <span>userPassword</span>
+          </label>
+
+          <input [(ngModel)]="passwordValue" type="password" placeholder="userPassword"
+            class="form-control py-3 shadow-none border-bottom border-0 px-2" id="userpw" name="userpw" required>
+        </div>
+
+        <button class="btn text-capitalize text-white">send message</button>
+
+      </form>
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  transition: all 0.3s ease-in-out;
+
+}
+
+*::selection {
+  background-color: #1ABC9C;
+  color: #fff;
+}
+.nav-bg , footer {
+  background-color: #2C3E50 !important;
+
+}
+
+.star-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.star-icon::after,
+.star-icon::before {
+  content : "";
+  display: inline-block;
+  position: absolute;
+  right:70px;
+  width: 25% !important;
+  height: 5px ;
+  background-color: white ;
+}
+.star-icon::before {
+  left:70px;
+}
+
+section {
+  min-height: 100vh !important;
+  margin-top: 50px;
+}
+
+
+#home ,
+#about {
+  background-color: #1ABC9C;
+}
+
+h2 {
+  font-size: 40px !important;
+}
+
+
+
+
+
+#portfolio h2 ,#portfolio .star-icon i ,
+#contact h2 ,#contact .star-icon i{
+  color: #2C3E50 !important;
+}
+
+
+#portfolio .star-icon::after ,#portfolio .star-icon::before ,
+#contact .star-icon::after ,#contact .star-icon::before{
+
+  background-color: #2C3E50 !important;
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 35px !important;
+  }
+  .navbar-brand {
+    font-size: 25px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 27px !important;
+  }
+  .navbar-brand {
+    font-size: 20px !important;
+  }
+  .star-icon::before
+  {
+    left: 40px;
+  }
+  .star-icon::after {
+    right: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  h2 {
+    font-size: 24px !important;
+  }
+}
